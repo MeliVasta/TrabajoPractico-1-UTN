@@ -1,0 +1,196 @@
+/* seccion mi resumen */
+
+.seccion-mi-resumen {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mi-resumen-barra-navegadora {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: var(--degrade-fondo-botones);
+    border-radius: 7%;
+    width: 70vw;
+    box-shadow: var(--box-shadow-1-1);
+}
+
+.mi-resumen-barra-navegadora li {
+    list-style: none;
+    padding: 2% 6%;
+}
+
+.mi-resumen-barra-navegadora button {
+    border: none;
+    background-color: transparent;
+}
+
+.mi-resumen-barra-navegadora a {
+    text-decoration: none;
+    font-size: 80%;
+    font-weight: 600;
+    color: var(--color-fuente-subtitulos);
+    font-family: var(--fuente-secundaria);
+}
+
+/* boton activo barra navegadora seccion mi resumen */
+.mi-resumen-barra-navegadora li:hover {
+    background-image: var(--degrade-fondo-botones);
+    box-shadow: var(--box-shadow-1-1);
+    border-radius: 7%;
+}
+
+.mi-resumen-barra-navegadora a:hover {
+    color: var(--color-primario);
+}
+
+/* seccion mi resumen caja datos*/
+.seccion-mi-resumen-datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.mi-resumen-caja-general {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.mi-resumen-titulo {
+    margin: 2%;
+}
+
+.mi-resumen-titulo p {
+    color: var(--color-primario);
+    font-size: 80%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.mi-resumen-titulo h3 {
+    font-size: 150%;
+    margin-top: 1%;
+    letter-spacing: 1px;
+}
+
+.linea-de-tiempo-cajas {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    font-family: var(--fuente-secundaria);
+}
+
+/* cajas descripcion mi resumen */
+.mi-resumen-cajas {
+    display: flex;
+    flex-direction: column;
+    width: 180%;
+    background-image: var(--degrade-fondo-botones);
+    padding: 4% 5%;
+    border-radius: 3%;
+    margin: 0% 0% 5% 0%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mi-resumen-cajas-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mi-resumen-cajas-subtitulo h4 {
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.mi-resumen-cajas-subtitulo p {
+    font-size: 70%;
+    color: var(--color-fuente);
+    font-weight: 500;
+    margin: 2% 0%;
+}
+
+.mi-resumen-cajas-subtitulo-puntaje {
+    color: var(--color-primario);
+    padding: 1% 2%;
+    font-size: 70%;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.mi-resumen-parrafo {
+    font-size: 80%;
+}
+
+/* barra divisora de mi resumen */
+.mi-resumen-barra-divisora {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0%;
+}
+
+.mi-resumen-barra-propiedades {
+    width: 25vw;
+    height: 1px;
+    background-color: var(--color-fuente-secundario);
+    opacity: 20%;
+}
+
+/* linea de tiempo */
+.mi-resumen-linea-de-tiempo {
+    display: flex;
+    opacity: 30%;
+    flex-direction: column;
+    z-index: -1;
+    align-items: center;
+}
+
+.linea-vertical-corta {
+    width: 2px;
+    height: 22px;
+    background-color: var(--color-fuente-secundario);
+    position: relative;
+    top: 4px;
+}
+
+.circulos {
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--color-fuente-secundario);
+    border-radius: 50%;
+}
+
+.linea-vertical-larga {
+    width: 2px;
+    height: 140px;
+    background-color: var(--color-fuente-secundario);
+    position: relative;
+}
+
+.linea-horizontal-corta {
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-fuente-secundario);
+    position: relative;
+    left: 15px;
+    top: 6px;
+}
+
+.linea-vertical-larga-ultima {
+    width: 2px;
+    height: 120px;
+    background-color: var(--color-fuente-secundario);
+    position: relative;
+}

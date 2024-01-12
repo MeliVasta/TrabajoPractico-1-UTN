@@ -1,0 +1,122 @@
+/*main*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;
+    padding: 5% 0%;
+}
+
+.contenido-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.bienvenido-contenido {
+    padding: 1%;
+}
+
+.bienvenido-contenido .bienvenido-main {
+    font-size: 70%;
+    margin-bottom: 3%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--color-fuente-secundario);
+}
+
+.bienvenido-contenido h1 {
+    line-height: 100%;
+    font-size: 300%;
+}
+
+.bienvenido-contenido .segunda-linea-bienvenido {
+    font-size: 200%;
+}
+
+.bienvenido-nombre {
+    color: var(--color-primario);
+}
+
+.bienvenido-contenido .parrafo-bienvenido {
+    font-family: var(--fuente-secundaria);
+    font-size: 90%;
+    font-weight: var(--font-weight-subtitulos);
+    line-height: 120%;
+    color: var(--color-fuente-terciario);
+    margin-top: 5%;
+}
+
+/*contacto main */
+
+.contactar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.contactar h5 {
+    font-size: 60%;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    color: var(--color-fuente);
+    padding-bottom: 5%;
+}
+
+.contactar ul {
+    display: flex;
+    align-content: center;
+    gap: 15px;
+    padding-left: 0%;
+}
+
+.contactar ul li {
+    list-style: none;
+}
+
+.redes {
+    margin: 1%;
+}
+
+.redes ul li {
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.2),
+        -8px -3px 15px 4px rgba(255, 255, 255, 1);
+    background-image: var(--degrade-fondo-botones);
+    border-radius: 10%;
+    padding: 10%;
+}
+
+.redes ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.redes ul li a:visited {
+    color: black;
+}
+
+.redes ul li a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+}
+
+/*imagen main*/
+
+.imagen-main {
+    padding-left: 5%;
+}
+
+.imagen-main img {
+    width: 30vw;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: var(--box-shadow-3-1);
+}

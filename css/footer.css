@@ -1,0 +1,29 @@
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3% 0%;
+    line-height: 90%;
+}
+
+footer img {
+    width: 4vw;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 60%;
+    margin-bottom: 1%;
+}
+
+footer h5 {
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: var(--color-fuente-subtitulos);
+}
+
+footer p {
+    font-family: var(--fuente-secundaria);
+    font-size: 9px;
+    color: var(--color-fuente);
+}

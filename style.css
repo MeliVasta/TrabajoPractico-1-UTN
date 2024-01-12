@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url(./css/nav.css);
+@import url(./css/main.css);
+@import url(./css/seccion-que-hago.css);
+@import url(./css/seccion-portafolio.css);
+@import url(./css/seccion-blog.css);
+@import url(./css/seccion-contactame.css);
+@import url(./css/footer.css);
+@import url(./css/seccion-mi-resumen.css);
+
+:root {
+    --color-fuente: #686b6e;
+    --color-fuente-secundario: #96989b;
+    --color-fuente-terciario: #6e7174;
+    --color-fuente-subtitulos: #3c3e41;
+    --color-fondo: #ecf0f3;
+    --color-primario: #f9477f;
+    --fuente-principal: "Roboto", sans-serif;
+    --fuente-secundaria: "Poppins", sans-serif;
+    --degrade-fondo-botones: linear-gradient(135deg, #e4eaed 0%, #fdfefe 100%);
+    --font-weight-subtitulos: 500;
+    --box-shadow-1-1: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.1),
+        -8px -3px 15px 4px rgba(255, 255, 255, 1);
+    --box-shadow-3-1: 2px 2px 10px 0.5px rgba(0, 0, 0, 0.3),
+        -8px -3px 15px 4px rgba(255, 255, 255, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+}
+
+
+
+/* barra divisora secciones */
+
+.barra-divisora {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0%;
+}
+
+.barra-propiedades {
+    width: 65vw;
+    height: 1.5px;
+    background-color: var(--color-fuente-secundario);
+    opacity: 10%;
+}
+
+/* titulos de secciones */
+
+.seccion-titulo {
+    margin: 2% 0%;
+}
+
+.seccion-titulo p {
+    text-align: center;
+    color: var(--color-primario);
+    font-size: 80%;
+    font-weight: var(--font-weight-subtitulos);
+    letter-spacing: 0.5px;
+    margin: 0% 0% 2% 2%;
+    width: 100%;
+}
+
+.seccion-titulo h2 {
+    font-size: 300%;
+    color: var(--color-fuente-subtitulos);
+    text-align: center;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+
+    /* main */
+    .bienvenido-contenido h1 {
+        font-size: 150%;
+    }
+
+    .bienvenido-contenido .segunda-linea-bienvenido {
+        font-size: 90%;
+    }
+
+    .contenido-main .parrafo-bienvenido {
+        font-size: 70%;
+        font-weight: 400;
+        margin-top: 1%;
+        line-height: 110%;
+    }
+
+    .contactar ul {
+        gap: 8%;
+    }
+
+    .redes h5 {
+        font-size: 60%;
+    }
+
+    .redes ul li {
+        width: 40px;
+        height: 40px;
+        margin: 2%;
+    }
+
+    .redes ul li a i {
+        font-size: 90%;
+    }
+
+    /* seccion que hago */
+    .seccion-titulo-que-hago p {
+        font-size: 50%;
+    }
+
+    .seccion-titulo-que-hago h2 {
+        font-size: 150%;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas {
+        width: 42%;
+        margin: 4% 0%;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas h3 {
+        font-size: 90%;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas p {
+        font-size: 60%;
+    }
+
+    /* titulos de secciones */
+    .seccion-titulo p {
+        font-size: 80%;
+    }
+
+    .seccion-titulo h2 {
+        font-size: 200%;
+    }
+
+    /* seccion portafolio */
+    .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas {
+        width: 40%;
+    }
+
+    .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas .seccion-portafolio-descripcion-titulo h5 {
+        font-size: 60%;
+    }
+
+    .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas .seccion-portafolio-descripcion-titulo p {
+        font-size: 60%;
+    }
+
+    .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas p {
+        font-size: 80%;
+    }
+
+    /* seccion resumen */
+    .mi-resumen-barra-navegadora {
+        width: 80vw;
+    }
+
+    .mi-resumen-barra-navegadora li {
+        padding: 2%;
+    }
+
+    .mi-resumen-cajas {
+        padding: 5%;
+    }
+
+    .mi-resumen-cajas-subtitulo p {
+        margin: 2%;
+    }
+
+    /* barra divisora de mi resumen */
+    .mi-resumen-barra-divisora {
+        padding: 5% 0%;
+    }
+
+    .boton-activo {
+        background-image: var(--degrade-fondo-botones);
+        box-shadow: var(--box-shadow-1-1);
+        border-radius: 7%;
+    }
+    
+    .boton-activo a {
+        color: var(--color-primario);
+    }
+
+    .mi-resumen-cajas-subtitulo {
+        width: 70%;
+    }
+
+    .mi-resumen-cajas-subtitulo h4 {
+        font-size: 140%;
+    }
+
+    .mi-resumen-cajas-subtitulo p {
+        font-size: 80%;
+        margin: 0%;
+    }
+
+    .seccion-mi-resumen-datos {
+        width: 75%;
+    }
+
+    .mi-resumen-caja-general {
+        width: 100%;
+    }
+
+    .linea-de-tiempo-cajas {
+        width: 100%;
+    }
+
+    /* mi resumen linea de tiempo */
+    .linea-vertical-larga {
+        height: 200px;
+    }
+
+    .linea-vertical-larga-ultima {
+        height: 150px;
+    }
+
+    /* seccion mi blog*/
+    .seccion-blog-propiedades-cajas .seccion-blog-cajas {
+        width: 25%;
+    }
+
+    .seccion-blog-descripcion-titulo {
+        font-size: 80%;
+    }
+
+    .seccion-blog-cajas-contenido img {
+        margin-bottom: 3%;
+    }
+
+    .seccion-blog-cajas-contenido .seccion-blog-descripcion p {
+        font-size: 70%;
+    }
+
+    /* seccion contactame */
+    .seccion-contactame-datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .seccion-contactame-datos-personales {
+        width: 70%;
+        padding: 5%;
+    }
+
+    .seccion-contactame-datos-personales h3 {
+        font-size: 100%;
+    }
+
+    .seccion-contactame-datos-personales span {
+        font-size: 90%;
+    }
+
+    .seccion-contactame-datos-personales p {
+        font-size: 70%;
+    }
+
+    .contactame-formulario {
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    .contactame-formulario .form-nombre-telefono div {
+        width: 100%;
+    }
+
+    .contactame-formulario .form-nombre-telefono div input {
+        padding: 2%;
+    }
+
+    form button {
+        font-size: 70%;
+    }
+
+    .barra-divisora {
+        margin: 2% 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*main*/
+    main {
+        gap: 2%;
+        padding: 3% 5%;
+    }
+
+    .contenido-main {
+        width: 60%;
+    }
+
+    .bienvenido-contenido .bienvenido-main {
+        font-size: 50%;
+    }
+
+    .bienvenido-contenido h1 {
+        font-size: 140%;
+    }
+
+    .bienvenido-contenido .segunda-linea-bienvenido {
+        font-size: 100%;
+    }
+
+    /* seccion que hago */
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas {
+        padding: 3% 5%;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas i {
+        font-size: 90%;
+        margin: 3% 4%;
+    }
+
+    /* seccion portafolio */
+    .seccion-titulo h2 {
+        font-size: 150%;
+    }
+
+
+    /* seccion mi blog*/
+    .seccion-blog-propiedades-cajas .seccion-blog-cajas {
+        width: 35%;
+        margin: 5% 0%;
+    }
+
+    .seccion-blog-cajas-contenido {
+        bottom: 10%;
+    }
+
+    /* seccion contactame */
+    form .form-nombre-telefono input {
+        width: 100%;
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* main */
+    .bienvenido-contenido .bienvenido-main {
+        font-size: 40%;
+    }
+
+    .bienvenido-contenido h1 {
+        font-size: 110%;
+    }
+
+    .bienvenido-contenido .segunda-linea-bienvenido {
+        font-size: 90%;
+    }
+
+    .contenido-main .parrafo-bienvenido {
+        font-size: 50%;
+        line-height: 110%;
+    }
+
+    .redes h5 {
+        font-size: 40%;
+        margin: 0%;
+    }
+
+    .redes ul li {
+        width: 24px;
+        height: 24px;
+        margin: 2%;
+    }
+
+    .redes ul li a i {
+        font-size: 60%;
+    }
+
+    /* seccion que hago */
+    .seccion-titulo-que-hago p {
+        font-size: 50%;
+        font-weight: 600;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas {
+        width: 90%;
+        padding: 4% 5%;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas i {
+        font-size: 80%;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas h3 {
+        font-size: 80%;
+    }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas p {
+        font-size: 50%;
+    }
+
+    /* titulos de secciones */
+    .seccion-titulo p {
+        font-size: 60%;
+    }
+
+    .seccion-titulo h2 {
+        font-size: 160%;
+    }
+
+    /* seccion portafolio */
+    .seccion-portafolio .seccion-portafolio-propiedades-cajas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas {
+        width: 85%;
+        padding: 5%;
+        margin: 5% 0%;
+    }
+
+    /* seccion resumen */
+    .mi-resumen-barra-navegadora {
+        width: 85vw;
+        padding: 0%;
+    }
+
+    .mi-resumen-barra-navegadora li button a {
+        font-size: 55%;
+    }
+
+    .mi-resumen-titulo p {
+        font-size: 70%;
+        margin: 0%;
+    }
+
+    .mi-resumen-cajas {
+        padding: 5%;
+    }
+
+    .mi-resumen-cajas-subtitulo p {
+        margin: 2%;
+    }
+
+    /* barra divisora de mi resumen */
+    .mi-resumen-barra-divisora {
+        padding: 5% 0%;
+    }
+
+    .mi-resumen-cajas-subtitulo {
+        width: 80%;
+    }
+
+    .mi-resumen-cajas-subtitulo h4 {
+        font-size: 90%;
+    }
+
+    .mi-resumen-cajas-subtitulo p {
+        font-size: 60%;
+        margin: 0%;
+    }
+
+    .mi-resumen-cajas .mi-resumen-parrafo p {
+        font-size: 80%;
+    }
+
+    .seccion-mi-resumen-datos {
+        width: 80%;
+    }
+
+    .mi-resumen-caja-general {
+        width: 100%;
+    }
+
+    .linea-de-tiempo-cajas {
+        width: 100%;
+    }
+
+    /* mi resumen linea de tiempo */
+    .linea-vertical-larga {
+        height: 140px;
+    }
+
+    .linea-vertical-larga-ultima {
+        height: 125px;
+    }
+
+    /* seccion mi blog*/
+    .seccion-blog-propiedades-cajas .seccion-blog-cajas {
+        width: 50%;
+    }
+
+    .seccion-blog-propiedades-cajas .seccion-blog-cajas .seccion-blog-cajas-contenido img {
+        width: 95%;
+    }
+
+    /* seccion contactame */
+    .seccion-contactame-datos-personales {
+        width: 80%;
+        padding: 5%;
+    }
+
+    .seccion-contactame-datos-personales p {
+        font-size: 60%;
+    }
+
+    .contactar-seccion-contactame .redes h5 {
+        font-size: 50%;
+    }
+
+    .contactar-seccion-contactame .redes ul {
+        margin: 8% 2% 8% 0%;
+    }
+
+    .contactar-seccion-contactame .redes ul li {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contactar-seccion-contactame .redes ul li a i {
+        font-size: 90%;
+    }
+
+    .contactame-formulario {
+        width: 80%;
+    }
+
+    .contactame-formulario .form-nombre-telefono div input {
+        padding: 0%;
+    }
+
+    form label {
+        font-size: 50%;
+    }
+
+    form input {
+        padding: 0%;
+    }
+
+    form button {
+        font-size: 50%;
+    }
+}

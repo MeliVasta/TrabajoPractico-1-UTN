@@ -1,0 +1,131 @@
+/* seccion contactame */
+.seccion-contactame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.seccion-contactame-datos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: 2% 0%;
+    width: 70%;
+}
+
+.seccion-contactame-datos-personales {
+    background-image: var(--degrade-fondo-botones);
+    width: 35%;
+    padding: 2% 2% 0% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow-1-1);
+    border-radius: 2%;
+}
+
+.seccion-contactame-datos-personales img {
+    width: 100%;
+    border-radius: 3%;
+    margin-bottom: 3%;
+}
+
+.seccion-contactame-datos-personales h3 {
+    font-family: var(--fuente-principal);
+    font-size: 200%;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+}
+
+.seccion-contactame-datos-personales span {
+    color: var(--color-fuente-terciario);
+    font-size: 110%;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.seccion-contactame-datos-personales p {
+    font-family: var(--fuente-secundaria);
+    font-size: 90%;
+    font-weight: var(--font-weight-subtitulos);
+    color: var(--color-fuente-terciario);
+}
+
+/* formulario contactame*/
+.contactame-formulario {
+    width: 60%;
+}
+
+form {
+    background-image: var(--degrade-fondo-botones);
+    padding: 5%;
+    border-radius: 2%;
+    box-shadow: var(--box-shadow-1-1);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuente-secundaria);
+}
+
+form label {
+    display: block;
+    font-size: 70%;
+    letter-spacing: 0.5px;
+    font-weight: var(--font-weight-subtitulos);
+    color: var(--color-fuente);
+    padding-bottom: 2%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 6%;
+    resize: none;
+    border-radius: 5%;
+    border: 1.4px solid rgb(0, 0, 0, 0.1);
+}
+
+form .form-nombre-telefono {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+form .form-nombre-telefono div {
+    width: 45%;
+}
+
+form .form-nombre-telefono input {
+    padding: 3%;
+}
+
+form input {
+    padding: 2%;
+}
+
+form textarea {
+    padding: 15%;
+}
+
+form button {
+    width: 100%;
+    padding: 4%;
+    background-color: var(--color-primario);
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    font-size: 80%;
+    letter-spacing: 0.9px;
+    font-weight: 400;
+    font-family: var(--fuente-principal);
+}
+
+form button:hover {
+    background-color: #d1124e;
+}

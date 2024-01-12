@@ -1,0 +1,42 @@
+/* menu de navegacion */
+nav .navbar {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-secundaria);
+    color: var(--color-fuente-terciario);
+}
+
+.navbar-brand {
+    margin-left: 2%;
+}
+
+.container-fluid a {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-fuente-terciario);
+}
+
+.offcanvas-body ul li {
+    margin: 0% 1%;
+}
+
+.offcanvas-body ul li a {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.offcanvas-body ul button {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    border: none;
+    border-radius: 10%;
+    background-image: var(--degrade-fondo-botones);
+    box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.1),
+        -8px -3px 15px 4px rgba(255, 255, 255, 0.8);
+}
+
+.offcanvas-body ul button a {
+    color: var(--color-primario);
+    font-size: 9px;
+    font-weight: 700;
+    text-decoration: none;
+}

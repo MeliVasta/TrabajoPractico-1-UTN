@@ -1,0 +1,73 @@
+/*seccion mi blog */
+.seccion-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-blog .seccion-blog-propiedades-cajas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 5%;
+    margin: 2% 0%;
+}
+
+.seccion-blog-propiedades-cajas .seccion-blog-cajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-secundaria);
+    width: 20%;
+    padding: 2% 2% 0% 2%;
+    border-radius: 2%;
+    background-image: var(--degrade-fondo-botones);
+    box-shadow: var(--box-shadow-3-1);
+}
+
+.seccion-blog-propiedades-cajas .seccion-blog-cajas img {
+    width: 110%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.seccion-blog-cajas-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 18%;
+}
+
+.seccion-blog-descripcion-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.seccion-blog-propiedades-cajas .seccion-blog-cajas .seccion-blog-descripcion-titulo h5 {
+    font-size: 70%;
+    color: var(--color-primario);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin: 0%;
+}
+
+.seccion-blog-propiedades-cajas .seccion-blog-cajas .seccion-blog-descripcion-titulo p {
+    color: var(--color-fuente);
+    font-size: 70%;
+    margin: 0%;
+}
+
+.seccion-blog-cajas-contenido .seccion-blog-descripcion p {
+    font-size: 100%;
+    font-weight: 600;
+    font-family: var(--fuente-pncipal);
+    line-height: 120%;
+}
