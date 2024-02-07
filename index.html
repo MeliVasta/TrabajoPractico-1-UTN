@@ -25,7 +25,7 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">V.P.M. & co.</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -115,7 +115,7 @@
             </div>
         </div>
         <div class="imagen-main">
-            <img src="./img/retrato.png" alt="foto retrato">
+            <img src="./img/retrato.png" id="mainImagen" alt="foto retrato">
         </div>
     </main>
 
@@ -131,39 +131,45 @@
             <h2>¿Que hago?</h2>
         </div>
 
-        <div class="seccion-que-hago-propiedades-cajas">
-            <div class="seccion-que-hago-cajas">
-                <i class="fa-solid fa-bars"></i>
-                <h3>Desarrollo Frontend</h3>
-                <p>Capacidad en realizar una interfaz visible para los usuarios en un navegador web.
-                </p>
+        <div id="slider" class="seccion-que-hago-propiedades-cajas">
+            <div class="contenedor-cajas">
+                <div class="seccion-que-hago-cajas">
+                    <i class="fa-solid fa-bars"></i>
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Capacidad en realizar una interfaz visible para los usuarios en un navegador web.
+                    </p>
+                </div>
+                <div class="seccion-que-hago-cajas">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Desarrollo Backend</h3>
+                    <p>Gestión de la lógica, base de datos y otros procesos que ocurren en el servidor.</p>
+                </div>
+                <div class="seccion-que-hago-cajas">
+                    <i class="fa-solid fa-tv"></i>
+                    <h3>Base de Datos</h3>
+                    <p>Diseño y administración donde se almacenarán los datos del sitio.</p>
+                </div>
+                <div class="seccion-que-hago-cajas">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Seguridad Web</h3>
+                    <p>Implementación de medidas de seguridad para proteger la información del sitio y sus usuarios.</p>
+                </div>
+                <div class="seccion-que-hago-cajas">
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3>Optimización del Rendimiento</h3>
+                    <p>Trabajar en la mejora de la velocidad y eficiencia de un sitio web.</p>
+                </div>
+                <div class="seccion-que-hago-cajas">
+                    <i class="fa-regular fa-heart"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Realización de tareas de mantenimiento regular para garantizar que un sitio web funcione sin
+                        problemas.</p>
+                </div>
             </div>
-            <div class="seccion-que-hago-cajas">
-                <i class="fa-solid fa-book-open"></i>
-                <h3>Desarrollo Backend</h3>
-                <p>Gestión de la lógica, base de datos y otros procesos que ocurren en el servidor.</p>
-            </div>
-            <div class="seccion-que-hago-cajas">
-                <i class="fa-solid fa-tv"></i>
-                <h3>Base de Datos</h3>
-                <p>Diseño y administración donde se almacenarán los datos del sitio.</p>
-            </div>
-            <div class="seccion-que-hago-cajas">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>Seguridad Web</h3>
-                <p>Implementación de medidas de seguridad para proteger la información del sitio y sus usuarios.</p>
-            </div>
-            <div class="seccion-que-hago-cajas">
-                <i class="fa-solid fa-wifi"></i>
-                <h3>Optimización del Rendimiento</h3>
-                <p>Trabajar en la mejora de la velocidad y eficiencia de un sitio web.</p>
-            </div>
-            <div class="seccion-que-hago-cajas">
-                <i class="fa-regular fa-heart"></i>
-                <h3>Mantenimiento</h3>
-                <p>Realización de tareas de mantenimiento regular para garantizar que un sitio web funcione sin problemas.</p>
-            </div>
+
         </div>
+            <button id="derecha" class="derecha"><i class="fa-solid fa-arrow-right"></i></button>
+            <button id="izquierda" class="izquierda"><i class="fa-solid fa-arrow-left"></i></button>
     </section>
 
     <!-- barra divisora de contenido -->
@@ -179,58 +185,149 @@
         </div>
 
         <div class="seccion-portafolio-propiedades-cajas">
-            <div class="seccion-portafolio-cajas">
-                <img src="./img/portafolio-uno.jpg" alt="">
-                <div class="seccion-portafolio-descripcion-titulo">
-                    <h5>DESARROLLO</h5>
-                    <p>600</p>
+            <div class="seccion-portafolio-grupo">
+                <div class="seccion-portafolio-cajas">
+                    <div class="visible cajasPortafolio">
+                        <img src="./img/portafolio-uno.jpg" alt="">
+                        <div class="seccion-portafolio-descripcion-titulo">
+                            <h5>DESARROLLO</h5>
+                            <p>600</p>
+                        </div>
+                        <p>Servicio proporcionado para diseño.</p>
+                        <button class="btn-saber-mas btnSaberMas">Saber más +</button>
+                    </div>
+
+                    <div class="ocultar saberMas">
+                        <div class="saber-mas-cajas">
+                            <i class="fa-solid fa-xmark cross-saber-mas btnCross"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> ¡Conoce mas
+                                sobre mi clickeando el siguiente botón!</p>
+                            <button class="btn-git"><a href="https://github.com/MeliVasta/TrabajoPractico-1-UTN"
+                                    target="_blank"><i class="fa-brands fa-square-github"></i></a></button>
+                        </div>
+                    </div>
                 </div>
-                <p>Servicios proporcionados para diseño.</p>
             </div>
 
-            <div class="seccion-portafolio-cajas">
-                <img src="./img/portafolio-dos.jpg" alt="">
-                <div class="seccion-portafolio-descripcion-titulo">
-                    <h5>APLICACIONES</h5>
-                    <p>750</p>
+            <div class="seccion-portafolio-grupo">
+                <div class="seccion-portafolio-cajas">
+                    <div class="visible cajasPortafolio">
+                        <img src="./img/portafolio-dos.jpg" alt="">
+                        <div class="seccion-portafolio-descripcion-titulo">
+                            <h5>APLICACIONES</h5>
+                            <p>750</p>
+                        </div>
+                        <p>Diseño y mantenimiento de la página.</p>
+                        <button class="btn-saber-mas btnSaberMas">Saber más +</button>
+                    </div>
+
+                    <div class="ocultar saberMas">
+                        <div class="saber-mas-cajas">
+                            <i class="fa-solid fa-xmark cross-saber-mas btnCross"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> ¡Conoce mas
+                                sobre mi clickeando el siguiente botón!</p>
+                            <button class="btn-git"><a href="https://github.com/MeliVasta/TrabajoPractico-1-UTN"
+                                    target="_blank"><i class="fa-brands fa-square-github"></i></a></button>
+                        </div>
+                    </div>
                 </div>
-                <p>Diseño y mantenimiento de la página.</p>
             </div>
 
-            <div class="seccion-portafolio-cajas">
-                <img src="./img/portafolio-tres.jpg" alt="">
-                <div class="seccion-portafolio-descripcion-titulo">
-                    <h5>PHOTOSHOP</h5>
-                    <p>630</p>
+            <div class="seccion-portafolio-grupo">
+                <div class="seccion-portafolio-cajas">
+                    <div class="visible cajasPortafolio">
+                        <img src="./img/portafolio-tres.jpg" alt="">
+                        <div class="seccion-portafolio-descripcion-titulo">
+                            <h5>PHOTOSHOP</h5>
+                            <p>630</p>
+                        </div>
+                        <p>Creatividad en el diseño de logotipos nuevos.</p>
+                        <button class="btn-saber-mas btnSaberMas">Saber más +</button>
+                    </div>
+
+                    <div class="ocultar saberMas">
+                        <div class="saber-mas-cajas">
+                            <i class="fa-solid fa-xmark cross-saber-mas btnCross"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> ¡Conoce mas
+                                sobre mi clickeando el siguiente botón!</p>
+                            <button class="btn-git"><a href="https://github.com/MeliVasta/TrabajoPractico-1-UTN"
+                                    target="_blank"><i class="fa-brands fa-square-github"></i></a></button>
+                        </div>
+                    </div>
                 </div>
-                <p>Creatividad en el diseño de logotipos.</p>
             </div>
 
-            <div class="seccion-portafolio-cajas">
-                <img src="./img/portafolio-cuatro.jpg" alt="">
-                <div class="seccion-portafolio-descripcion-titulo">
-                    <h5>FIGMA</h5>
-                    <p>360</p>
+
+            <div class="seccion-portafolio-grupo">
+                <div class="seccion-portafolio-cajas">
+                    <div class="visible cajasPortafolio">
+                        <img src="./img/portafolio-cuatro.jpg" alt="">
+                        <div class="seccion-portafolio-descripcion-titulo">
+                            <h5>FIGMA</h5>
+                            <p>360</p>
+                        </div>
+                        <p>Diseño y servicio de la página.</p>
+                        <button class="btn-saber-mas btnSaberMas">Saber más +</button>
+                    </div>
+
+                    <div class="ocultar saberMas">
+                        <div class="saber-mas-cajas">
+                            <i class="fa-solid fa-xmark cross-saber-mas btnCross"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> ¡Conoce mas
+                                sobre mi clickeando el siguiente botón!</p>
+                            <button class="btn-git"><a href="https://github.com/MeliVasta/TrabajoPractico-1-UTN"
+                                    target="_blank"><i class="fa-brands fa-square-github"></i></a></button>
+                        </div>
+                    </div>
                 </div>
-                <p>Diseño y servicio de la página.</p>
             </div>
 
-            <div class="seccion-portafolio-cajas">
-                <img src="./img/portafolio-cinco.jpg" alt="">
-                <div class="seccion-portafolio-descripcion-titulo">
-                    <h5>DISEÑO WEB</h5>
-                    <p>280</p>
+            <div class="seccion-portafolio-grupo">
+                <div class="seccion-portafolio-cajas">
+                    <div class="visible cajasPortafolio">
+                        <img src="./img/portafolio-cinco.jpg" alt="">
+                        <div class="seccion-portafolio-descripcion-titulo">
+                            <h5>DISEÑO WEB</h5>
+                            <p>280</p>
+                        </div>
+                        <p>Diseño para tecnología y servicios.</p>
+                        <button class="btn-saber-mas btnSaberMas">Saber más +</button>
+                    </div>
+
+                    <div class="ocultar saberMas">
+                        <div class="saber-mas-cajas">
+                            <i class="fa-solid fa-xmark cross-saber-mas btnCross"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> ¡Conoce mas
+                                sobre mi clickeando el siguiente botón!</p>
+                            <button class="btn-git"><a href="https://github.com/MeliVasta/TrabajoPractico-1-UTN"
+                                    target="_blank"><i class="fa-brands fa-square-github"></i></a></button>
+                        </div>
+                    </div>
                 </div>
-                <p>Diseño para tecnología y servicios.</p>
             </div>
 
-            <div class="seccion-portafolio-cajas">
-                <img src="./img/portafolio-seis.jpg" alt="">
-                <div class="seccion-portafolio-descripcion-titulo">
-                    <h5>ILUSTRATOR</h5>
-                    <p>690</p>
+            <div class="seccion-portafolio-grupo">
+                <div class="seccion-portafolio-cajas">
+                    <div class="visible cajasPortafolio">
+                        <img src="./img/portafolio-seis.jpg" alt="">
+                        <div class="seccion-portafolio-descripcion-titulo">
+                            <h5>ILUSTRATOR</h5>
+                            <p>690</p>
+                        </div>
+                        <p>Diseño de iconos personalizados.</p>
+                        <button class="btn-saber-mas btnSaberMas">Saber más +</button>
+                    </div>
+
+                    <div class="ocultar saberMas">
+                        <div class="saber-mas-cajas">
+                            <i class="fa-solid fa-xmark cross-saber-mas btnCross"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> <br> ¡Conoce mas
+                                sobre mi clickeando el siguiente botón!</p>
+                            <button class="btn-git"><a href="https://github.com/MeliVasta/TrabajoPractico-1-UTN"
+                                    target="_blank"><i class="fa-brands fa-square-github"></i></a></button>
+                        </div>
+                    </div>
                 </div>
-                <p>Diseño de iconos personalizados.</p>
             </div>
         </div>
     </section>
@@ -545,7 +642,9 @@
                 <img src="./img/contactame-apreton-manos.jpg">
                 <h3>V.P.M. & co.</h3>
                 <span>Director de Operaciones</span>
-                <p>Estoy disponible para trabajos freelance. Conéctate conmigo a través de nuestro teléfono o rellena el formulario.</p>
+                <p>Estoy disponible para trabajos freelance. Conéctate conmigo a través de nuestro teléfono o
+                    rellena el
+                    formulario.</p>
                 <p>Phone: +01234567890 <br>Email: admn@example.com</p>
                 <div class="contactar contactar-seccion-contactame">
                     <div class="redes">
@@ -572,29 +671,29 @@
             </div>
 
             <div class="contactame-formulario">
-                <form>
+                <form id="formulario">
                     <div class="form-nombre-telefono">
                         <div>
                             <label for="nombre">NOMBRE</label>
-                            <input type="text" id="nombre" name="nombre">
+                            <input type="text" id="nombre" name="nombre" required>
                         </div>
 
                         <div>
                             <label for="telefono">TELEFONO</label>
-                            <input type="tel" id="telefono" name="telefono">
+                            <input type="tel" id="telefono" name="telefono" required>
                         </div>
                     </div>
 
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="asunto">ASUNTO</label>
-                    <input type="text" id="asunto" name="asunto">
+                    <input type="text" id="asunto" name="asunto" required>
 
                     <label for="textarea">MENSAJE</label>
-                    <textarea id="textarea" name="textarea" class=".form-mensaje"></textarea>
+                    <textarea id="textarea" name="textarea" class="form-mensaje" required></textarea>
 
-                    <button type="submit">ENVIAR MENSAJE</button>
+                    <button id="btnSubmit" type="submit">ENVIAR MENSAJE</button>
                 </form>
             </div>
         </div>
@@ -617,5 +716,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+
+    <script src="app.js"></script>
 </body>
+
 </html>

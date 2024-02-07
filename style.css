@@ -39,8 +39,6 @@ body {
     font-family: var(--fuente-principal);
 }
 
-
-
 /* barra divisora secciones */
 
 .barra-divisora {
@@ -77,7 +75,6 @@ body {
     color: var(--color-fuente-subtitulos);
     text-align: center;
 }
-
 
 /* media queries */
 
@@ -126,10 +123,27 @@ body {
         font-size: 150%;
     }
 
-    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas {
-        width: 42%;
-        margin: 4% 0%;
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas{
+        width: 600px;
     }
+
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas{
+        width: 200px;
+    }
+
+    .derecha, .izquierda{
+        top: 60%;
+        padding: .2% 1%;
+    }
+
+    .derecha{
+        left: 95%;
+    }
+    
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas {
+        padding: 2% ;
+    }
+
 
     .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas h3 {
         font-size: 90%;
@@ -149,8 +163,10 @@ body {
     }
 
     /* seccion portafolio */
-    .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas {
-        width: 40%;
+
+    .seccion-portafolio-grupo {
+        width: 30%;
+        margin: 2% 1%;
     }
 
     .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas .seccion-portafolio-descripcion-titulo h5 {
@@ -162,9 +178,16 @@ body {
     }
 
     .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas p {
-        font-size: 80%;
+        font-size: 70%;
+        margin: 5% 0%;
     }
 
+    .btn-saber-mas {
+        font-size: 80%;
+    }
+    .saber-mas-cajas i{
+        margin: 5%;
+    }
     /* seccion resumen */
     .mi-resumen-barra-navegadora {
         width: 80vw;
@@ -192,7 +215,7 @@ body {
         box-shadow: var(--box-shadow-1-1);
         border-radius: 7%;
     }
-    
+
     .boton-activo a {
         color: var(--color-primario);
     }
@@ -334,6 +357,9 @@ body {
         font-size: 150%;
     }
 
+    .saber-mas-cajas {
+        justify-content: center;
+    }
 
     /* seccion mi blog*/
     .seccion-blog-propiedades-cajas .seccion-blog-cajas {
@@ -394,27 +420,42 @@ body {
     }
 
     .seccion-que-hago .seccion-que-hago-propiedades-cajas {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: center;
+        width: 300px;
     }
 
     .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas {
-        width: 90%;
-        padding: 4% 5%;
+        width: 300px;
+        padding: 2%;
+    }
+
+    .derecha, .izquierda{
+        font-size: 12px;
+        top: 57%;
+        padding: .1% 1%;
+    }
+
+    .derecha{
+        left: 92%;
+    }
+    
+    .izquierda{
+        right: 84%;
+    }
+    
+    .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas{
+        padding: 2%;
     }
 
     .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas i {
-        font-size: 80%;
+        font-size: 90%;
     }
 
     .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas h3 {
-        font-size: 80%;
+        font-size: 90%;
     }
 
     .seccion-que-hago .seccion-que-hago-propiedades-cajas .seccion-que-hago-cajas p {
-        font-size: 50%;
+        font-size: 70%;
     }
 
     /* titulos de secciones */
@@ -434,9 +475,25 @@ body {
         align-content: center;
     }
 
+.seccion-portafolio-grupo{
+    width: 85%;
+    margin: 5% 0%;
+}
+
     .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas {
-        width: 85%;
         padding: 5%;
+    }
+
+    .seccion-portafolio-propiedades-cajas .seccion-portafolio-cajas p{
+        font-size: 80%;
+    }
+
+    .saber-mas-cajas i{
+        margin: 5%;
+    }
+
+
+    .saber-mas-cajas button{
         margin: 5% 0%;
     }
 
@@ -547,7 +604,7 @@ body {
     }
 
     .contactame-formulario .form-nombre-telefono div input {
-        padding: 0%;
+        padding: 2%;
     }
 
     form label {
@@ -555,10 +612,24 @@ body {
     }
 
     form input {
-        padding: 0%;
+        padding: 2%;
+        font-size: 60%;
     }
 
     form button {
+        font-size: 50%;
+    }
+
+    form textarea {
+        height: 100px;
+        font-size: 60%;
+    }
+
+    .mensaje-exito{
+        font-size: 70%;
+    }
+
+    .mensaje-error{
         font-size: 50%;
     }
 }
