@@ -5,8 +5,7 @@ Este repositorio contiene un proyecto de portafolio personal, desarrollado como 
 
 ## Diseño proporcionado:
 
-https://www.behance.net/gallery/186223239/Portfolio-Website-Landing-Page?tracking_sourc
-e=search_projects&l=75
+https://www.behance.net/gallery/186223239/Portfolio-Website-Landing-Page?tracking_source=search_projects&l=75
 
 
 ## Contenido
