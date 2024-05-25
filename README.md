@@ -13,5 +13,3 @@ Este repositorio contiene un proyecto de portafolio personal, desarrollado como 
 - **img/:** Carpeta que almacena las imágenes utilizadas en el portafolio.
 
 
-
-¡Gracias por revisar mi portafolio personal! Espero que disfrutes explorando mi trabajo.
