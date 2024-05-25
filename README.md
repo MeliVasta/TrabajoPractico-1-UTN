@@ -13,3 +13,6 @@ Este repositorio contiene un proyecto de portafolio personal, desarrollado como 
 - **img/:** Carpeta que almacena las imágenes utilizadas en el portafolio.
 
 
+## Vistas utilizadas:
+
+- Utilizando la herramienta Resposively App las siguientes vistas: MacBook Pro (1140x900), LaptopWith Touch (950x1280), iPad (768x1024) e iPhone 12 Pro (390x844).
